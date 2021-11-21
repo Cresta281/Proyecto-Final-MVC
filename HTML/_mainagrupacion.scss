@@ -1,0 +1,182 @@
+.agrupacion {
+    display: flex;
+    flex-direction: column;
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .agrupacion_header{
+        @include desktop {
+            width: 100%;
+            height: 200px;
+        }
+        .agrupacion_header_texto {
+            h1 {
+                width: 90%;
+                font-size: 18px;
+                color: $color-secundario;
+                font-weight: 400;
+                margin: 30px 20px 30px 20px;
+                @include ipad {
+                    font-size: 20px;
+                    margin: 30px 20px 30px 35px;
+                }
+                @include desktop {
+                    margin-top: 30px;
+                    text-align: center;
+                }
+                @include desktop_l {
+                    font-size: 26px;
+                }
+                span {
+                    font-weight: bold;
+                    font-size: 20px;
+                    margin: 20px 0px 20px 0px;
+                    @include ipad {
+                        font-size: 22px;
+                    }
+                    @include desktop_l {
+                        font-size: 26px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .caja_card {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        margin-top: 30px;
+        background-color: $color-primario;
+        .caja_card_header {
+            @include desktop {
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                margin-bottom: 40px;
+                margin-top: 40px;
+            }
+            @include desktop_l {
+                width: 1440px;
+            }
+            .caja_card_header_span{
+                padding: 10px auto;
+                color: $color-primario;
+                background-color: $colorblanco;
+                font-weight: 400;
+                font-size: 16px;
+                width: 80%;
+                margin-left: 20px;
+                @include ipad {
+                    font-size: 18px;
+                    margin-left: 35px;
+                }
+                @include desktop {
+                    display: none;
+                }    
+            }
+            .caja_card_header_texto{
+                h1 {
+                    width: 90%;
+                    font-size: 18px;
+                    color: $colorblanco;
+                    font-weight: 400;
+                    margin: 10px 20px auto;
+                    @include ipad {
+                        font-size: 20px;
+                        margin: 20px 35px 20px 35px;
+                    }
+                    @include desktop {
+                        padding-bottom: 10px;
+                    }
+                    @include desktop_l {
+                        font-size: 26px;
+                        margin-right: 250px;
+                    }
+                    span {
+                        font-weight: bold;
+                        font-size: 20px;
+                        @include ipad {
+                            font-size: 22px;
+                        }
+                        @include desktop_l {
+                            font-size: 26px;
+                        }
+                    }
+                }
+            }
+            .caja_card_header_img {
+                width: 85%;
+                margin: 15px auto;
+                border-radius: 15px;
+                @include desktop {
+                    width: 35%;
+                    margin-right: 80px;
+                }
+                @include desktop_l {
+                    width: 35%;
+                    margin-right: 110px;
+                }
+            }
+            .caja_card_header_contenido {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p {
+                    @include p_mobile;
+                    color: $colorblanco;
+                    margin-bottom: 15px;
+                    @include ipad {
+                        @include p_ipad;
+                        color: $colorblanco;
+                        margin: 20px 35px 40px 35px;
+                    }
+                    @include desktop {
+                        position: absolute;
+                        width: 35%;
+                        left: 0%;
+                        top: 20%;
+                    }
+                    @include desktop_l {
+                        font-size: 22px;
+                    }
+                }
+                button {
+                    @include botonmobile2;
+                    margin: 20px 0 10px 0;
+                    @include ipad {
+                        @include boton_ipad;
+                        margin-top: 20px;
+                    }
+                    @include desktop {
+                        @include boton_desktop;
+                        position: absolute;
+                        left: 10%;
+                        top: 90%;
+                    }
+                    @include desktop_l {
+                        @include boton_ipad;
+                        font-size: 20px;
+                    }
+                    &:hover {
+                        @include hoversecundario;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+@import "mixins&variables";
+@import "header&nav";
+@import "mainhome";
+@import "mainnosotros";
+@import "maincontacto";
+@import "mainnoticias";
+@import "mainagrupacion";
+@import "footer";

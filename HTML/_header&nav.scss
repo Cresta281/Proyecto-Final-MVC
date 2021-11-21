@@ -1,0 +1,144 @@
+.body_logo {
+    margin: 15px 0 0 15px;
+    .body_logo_boton{
+        text-decoration: none;
+        border: none;
+        background-color: $colorblanco;
+        height: 100px;
+        width: 100px;
+        .body_logo_boton_link {
+            .body_logo_boton_link_imagen{
+                width: 100px;
+                height: 100px;
+
+            }
+        }
+    }
+
+}
+
+.body_title {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.navbar {
+    background-color: $color-primario;
+    width: 100%;
+    margin: auto;
+    .navbar_logo{
+        width: 40%;
+        height: 40px;
+        background-color: $colorblanco;
+        border-radius: 30px;
+        color: $color-primario;
+        text-decoration: none;
+        font-size: 16px; 
+        font-weight: bold;
+        margin: auto;
+        @include ipad {
+            display: none;
+            width: 5%;
+        }
+        @include desktop {
+            display: none;
+        }
+        .navbar_logo_image {
+            max-width: 40%;
+            max-height: 40px;
+            padding: auto;
+            margin: auto;
+        }
+        
+    }
+    .navbar_logo_ipad {
+        width: 40%;
+        display: none;
+        height: 40px;
+        background-color: $colorblanco;
+        border-radius: 30px;
+        color: $color-primario;
+        text-decoration: none;
+        font-size: 16px; 
+        font-weight: bold;
+        margin: auto;
+        @include ipad {
+            display: inline-block;
+            width: 70%;
+            font-size: 18px;
+            text-align: center;
+        }
+        @include desktop {
+            display: none;
+        }
+        .navbar_logo_ipad_image {
+            max-width: 40%;
+            max-height: 40px;
+            padding: auto;
+            margin: auto;
+        }
+        
+    }
+    .navbar_logo_desktop {
+        width: 180px;
+        display: none;
+        height: 40px;
+        background-color: $colorblanco;
+        border-radius: 30px;
+        color: $color-primario;
+        text-decoration: none;
+        font-size: 16px; 
+        font-weight: bold;
+        margin: auto;
+        @include desktop {
+            display: inline-block;
+        }
+        .navbar_logo_desktop_image {
+            max-width: 90%;
+            max-height: 40px;
+            padding: auto;
+            margin: auto;
+        }
+    }
+    .navbar_toggler {
+        color: $colorblanco;
+    }
+    .navbar_item{
+        font-size: 14px;
+        @include desktop {
+            font-size: 18px;
+            margin: 10px auto;
+        }
+        @include desktop_l {
+            font-size: 20px;
+        }
+        .navbar_item_dropdown {
+            background-color: $color-primario;
+            font-size: 14px;
+            .navbar_item_links_dropdown {
+                @include links;
+                &:hover {
+                    background-color: $colorblanco;
+                    color:#292929;
+                }
+                
+            }
+        }
+        .navbar_item_links {
+            @include links;
+            &:hover {
+                background-color: $colorblanco;
+                color:#292929;
+            }
+            @include desktop {
+                margin: 0px 45px auto;
+            }
+            @include desktop_l {
+                margin: 0px 90px auto;
+            }
+        } 
+    }
+}

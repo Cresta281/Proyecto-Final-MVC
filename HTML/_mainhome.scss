@@ -1,0 +1,406 @@
+
+.carousel {
+    @include desktop {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+.hola_titulo {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include desktop {
+        position: absolute;
+        z-index: 2;
+        top: 35%;
+        left: 8%;
+        align-items: flex-start;
+    }
+    h1 {
+        width: 90%;
+        margin-top: 10px;
+        font-size:20px;
+        color: $color-secundario;
+        font-weight: bold;
+        margin: 0 20px auto;
+        @include ipad {
+            font-size: 22px;
+            margin-top: 20px;
+        }
+        @include desktop {
+            color: $colorblanco;
+            font-size: 22px;
+            margin-left: 10px;
+        }
+        @include desktop_l {
+            font-size: 26px;
+        }
+    
+        span {
+            color: $colorblanco;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            background-color: $color-secundario;
+            @include ipad {
+                font-size: 22px;
+            }
+            @include desktop {
+                font-size: 22px;
+            }
+            @include desktop_l {
+                font-size: 26px;
+            }
+        }
+    }
+    p {
+        @include p_mobile;
+        @include ipad {
+            @include p_ipad;
+        }
+        @include desktop {
+            @include p_desktop;
+            width: 50%;
+        }
+        @include desktop_l {
+            @include p_desktop;
+            font-size: 22px;
+        }
+    }
+    button {
+        @include botonmobile;
+        margin-top: 20px;
+        @include ipad {
+            @include boton_ipad;
+            margin-top: 20px;
+        }
+        @include desktop {
+            @include boton_desktop;
+        }
+        @include desktop_l {
+            @include boton_ipad;
+            font-size: 20px;
+        }
+        &:hover {
+            @include hoverprimario;
+        }
+    }
+}
+
+.menu_proyectos {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    margin-top: 30px;
+    .menu_proyectos_header {
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+        }
+        .menu_proyectos_header_span{
+            padding: 5px;
+            color: $colorblanco;
+            background-color: $color-primario;
+            font-weight: 400;
+            font-size: 16px;
+            width: 80%;
+            margin-left: 20px;
+            @include ipad {
+                font-size: 18px;
+                margin-left: 35px;
+            }
+            @include desktop {
+                display: none;
+            }    
+        }
+        .menu_proyectos_header_texto{
+            h1 {
+                width: 90%;
+                font-size: 18px;
+                color: $color-secundario;
+                font-weight: 400;
+                margin: 10px 20px auto;
+                @include ipad {
+                    font-size: 22px;
+                    margin: 20px 35px auto;
+                }
+                @include desktop {
+                    padding-bottom: 10px;
+                    border-bottom: solid 2px $color-secundario;
+                }
+                @include desktop_l {
+                    font-size: 26px;
+                    margin-right: 250px;
+                }
+                span {
+                    font-weight: bold;
+                    font-size: 20px;
+                    @include ipad {
+                        font-size: 22px;
+                    }
+                    @include desktop_l {
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+        .menu_proyectos_img {
+            width: 85%;
+            margin: 15px auto;
+            border-radius: 15px;
+            @include desktop {
+                width: 55%;
+            }
+            @include desktop_l {
+                width: 45%;
+            }
+        }
+        .menu_proyectos_header_contenido {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                @include p_mobile;
+                @include ipad {
+                    @include p_ipad;
+                    margin: 20px 35px auto;
+                }
+                @include desktop {
+                    position: absolute;
+                    width: 35%;
+                    left: 0%;
+                    top: 20%;
+                }
+                @include desktop_l {
+                    font-size: 22px;
+                }
+            }
+            button {
+                @include botonmobile2;
+                margin: 20px 0 10px 0;
+                @include ipad {
+                    @include boton_ipad;
+                    margin-top: 20px;
+                }
+                @include desktop {
+                    @include boton_desktop;
+                    position: absolute;
+                    left: 10%;
+                    top: 50%;
+                }
+                @include desktop_l {
+                    @include boton_ipad;
+                    font-size: 20px;
+                }
+                &:hover {
+                    @include hoversecundario;
+                }
+            }
+        }
+    }
+}
+
+.proyectos_alternativos {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    margin-top: 30px;
+    background-color: $color-primario;
+    .proyectos_alternativos_header {
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+        }
+        .proyectos_alternativos_header_span{
+            padding: 5px;
+            color: $color-primario;
+            background-color: $colorblanco;
+            font-weight: 400;
+            font-size: 16px;
+            width: 80%;
+            margin-left: 20px;
+            @include ipad {
+                font-size: 18px;
+                margin-left: 35px;
+            }
+            @include desktop {
+                display: none;
+            }    
+        }
+        .proyectos_alternativos_header_texto{
+            h1 {
+                width: 90%;
+                font-size: 18px;
+                color: $colorblanco;
+                font-weight: 400;
+                margin: 10px 20px auto;
+                @include ipad {
+                    font-size: 20px;
+                    margin: 20px 35px auto;
+                }
+                @include desktop {
+                    padding-bottom: 10px;
+                    border-bottom: solid 2px $colorblanco;
+                }
+                @include desktop_l {
+                    font-size: 26px;
+                    margin-right: 250px;
+                }
+                span {
+                    font-weight: bold;
+                    font-size: 20px;
+                    @include ipad {
+                        font-size: 22px;
+                    }
+                    @include desktop_l {
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+        .menu_proyectos_img {
+            width: 85%;
+            margin: 15px auto;
+            border-radius: 15px;
+            @include desktop {
+                width: 55%;
+            }
+            @include desktop_l {
+                width: 45%;
+            }
+        }
+        .proyectos_alternativos_header_contenido {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                @include p_mobile;
+                color: $colorblanco;
+                @include ipad {
+                    @include p_ipad;
+                    color: $colorblanco;
+                    margin: 20px 35px auto;
+                }
+                @include desktop {
+                    position: absolute;
+                    width: 35%;
+                    left: 0%;
+                    top: 20%;
+                }
+                @include desktop_l {
+                    font-size: 22px;
+                }
+            }
+            button {
+                @include botonmobile2;
+                margin: 20px 0 10px 0;
+                @include ipad {
+                    @include boton_ipad;
+                    margin-top: 20px;
+                }
+                @include desktop {
+                    @include boton_desktop;
+                    position: absolute;
+                    left: 10%;
+                    top: 50%;
+                }
+                @include desktop_l {
+                    @include boton_ipad;
+                    font-size: 20px;
+                }
+                &:hover {
+                    @include hoversecundario;
+                }
+            }
+        }
+    }
+}
+
+.home_nosotros {
+    margin-top:30px;
+    .home_nosotros_header{
+        .home_nosotros_header_texto {
+            h1 {
+                width: 90%;
+                font-size: 18px;
+                color: $color-secundario;
+                font-weight: 400;
+                margin: 10px 20px auto;
+                @include ipad {
+                    font-size: 20px;
+                    margin: 20px 20px auto;
+                }
+                @include desktop {
+                    margin: 20px 35px auto;
+                }
+                @include desktop_l {
+                    font-size: 26px;
+                }
+                span {
+                    font-weight: bold;
+                    font-size: 20px;
+                    @include ipad {
+                        font-size: 22px;
+                    }
+                    @include desktop_l {
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+        .home_nosotros_header_img {
+            display: none;
+            @include desktop {
+                display: block;
+                display: flex;
+                flex-direction: row;
+                margin: 15px auto;
+            }
+            img {
+                margin: 15px auto;
+                border-radius: 15px;
+                width: 25%;
+            }
+        }
+        .home_nosotros_header_boton {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            button {
+                @include botonmobile;
+                margin: 20px 0 10px 0;
+                @include ipad {
+                    @include boton_ipad;
+                    margin-top: 20px;
+                }
+                @include desktop {
+                    @include boton_desktop;
+                }
+                @include desktop_l {
+                    @include boton_ipad;
+                    font-size: 20px;
+                }
+                &:hover {
+                    @include hoverprimario;
+                }
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,118 @@
+.footer {
+    background-color: $color-primario;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-top: solid 5px $colorblanco;
+    position: relative;
+    .footer_logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        img {
+            max-width: 40%;
+            max-height: 40px;
+            padding: auto;
+            position: absolute;
+            left: 14%;
+            top: 17%;
+            @include desktop {
+                left: 10%;
+                max-width: 70%;
+                max-height: 70px;
+            }
+        }
+        a {
+            @include links;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            margin: 30px 5px 5px 5px;
+            @include ipad {
+                font-size: 16px;
+            }
+            @include desktop_l {
+                font-size: 22px;
+            }
+        }
+    }
+    .footer_logo_abajo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        a {
+            @include links;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            margin: 10px 5px;
+            @include ipad {
+                font-size: 16px;
+            }
+            @include desktop_l {
+                font-size: 22px;
+            }
+
+        }
+    }
+    .footer_redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 10px 35px;
+        @include desktop {
+            position: relative;
+            
+        }
+        .footer_redes_svc:nth-child(1){
+            @include desktop {
+                position: absolute;
+                right: 20%;
+                width: 20px;
+            }
+            @include desktop_l {
+                width: 30px;
+            }
+        }
+        .footer_redes_svc:nth-child(2){
+            @include desktop {
+                position: absolute;
+                right: 12%;
+                width: 20px;
+            }
+            @include desktop_l {
+                width: 30px;
+            }
+        }
+        .footer_redes_svc:nth-child(3){
+            @include desktop {
+                position: absolute;
+                right: 4%;
+                width: 20px;
+            }
+            @include desktop_l {
+                width: 30px;
+            }
+        }
+    }
+    .footer_info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        h2 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            color: $colorblanco;
+            @include ipad {
+                font-size: 16px;
+            }
+            @include desktop {
+                font-size: 12px;
+            }
+            @include desktop_l {
+                font-size: 16px;
+            }
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+}

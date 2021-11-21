@@ -1,0 +1,138 @@
+.forms {
+    color: #292929;
+    .forms_legends {
+        color: $color-secundario;
+        text-align: center;
+        @include ipad {
+            width: 40%;
+            margin-left: 230px;
+        }
+        @include desktop {
+            margin-left: 355px;
+            padding-top: -50px;
+        }
+        @include desktop_l {
+            margin-left: 480px;
+        }
+    }
+    .forms_legends:nth-of-type(2) {
+        @include desktop_l {
+            margin-left: 100px;
+        }
+    }
+    .forms_legends_alternative {
+        color: $colorblanco;
+        text-align: center;
+        @include ipad {
+            width: 40%;
+            margin-left: 355px;
+        }
+        @include desktop {
+            text-align: center;
+            padding-top: -50px;
+        }
+        @include desktop_l {
+            margin-left: 480px;
+        }
+    }
+    .forms_name {
+        margin: 10px 0px auto;
+        height: 240px;
+        text-align: center;
+        @include desktop {
+            padding-top: 10px;
+        }
+        .forms_name_input {
+            margin-top: 20px;
+        }
+        label {
+            color: $color-secundario;
+            margin: 10px 20px 10px 20px;
+        }
+        .forms_name_1 {
+            @include p_mobile;
+            height: 30px;
+            background-color: #FFFFFF;
+            color: #009FE3;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+            border-radius: 20px;
+            border: $color-secundario solid 2px;
+            cursor: pointer;
+            padding: auto;
+            width: 70%;
+            color:#292929;
+        }
+        .form-check {
+            @include desktop {
+                margin-left: 60px;
+            }
+            @include desktop_l {
+                margin-left: 100px;
+            }
+        }
+    }
+    .forms_email {
+        background-color: $color-primario;
+        margin: 10px 0px auto;
+        height: 300px;
+        text-align: center;
+        @include desktop {
+            padding-top: 10px;
+        }
+        @include desktop_l {
+            height: 400px;
+            padding-top: 80px;
+        }
+        label {
+            color: $colorblanco;
+            margin: 10px 20px 10px 20px;
+        }
+        .forms_email_1 {
+            @include p_mobile;
+            height: 30px;
+            background-color: #FFFFFF;
+            color: #009FE3;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+            border-radius: 20px;
+            border: $colorblanco solid 2px;
+            cursor: pointer;
+            padding: auto;
+            width: 70%;
+            color:#292929;
+        }
+        .form-check {
+            @include desktop {
+                margin-left: 80px;
+            }
+            @include desktop_l {
+                margin-left: 100px;
+            }
+        }
+        button {
+            @include botonmobile2;
+            margin: 50px 0 10px 0;
+            @include ipad {
+                @include boton_ipad;
+                margin-top: 40px;
+            }
+            @include desktop {
+                @include boton_desktop;
+                padding: 10px auto;
+                height: 30px;
+            }
+            @include desktop_l {
+                @include boton_ipad;
+                font-size: 20px;
+                height: 40px;
+            }
+            &:hover {
+                @include hoversecundario;
+            }
+    }   }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Accede a nuestro movimiento con una serie de simples pasos para poder quedar registrado oficialmente.">
+        <meta name="keywords" content="Contactanos,MVC,Formulario,Acceder,Registrarse,Enviar">
+        <title>Contactános-Movimiento de vida cristiana Argentina</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;500;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header> <!--HEADER-->
+          <nav class="navbar navbar-expand-lg navbar-light"> <!--NAV-->
+            <div class="container-fluid">
+              <a class="navbar_logo" href="Index.html"><img class="navbar_logo_image" src="footer-logo.png">MVC</a>
+              <a class="navbar_logo_ipad" href="Index.html"><img class="navbar_logo_ipad_image" src="footer-logo.png">MOVIMIENTO DE VIDA CRISTIANA</a> <!--NAVLOGO DE IPAD-->
+              <a class="navbar_logo_desktop" href="Index.html"><img class="navbar_logo_desktop_image" src="header-logo.png"></a><!--NAVBAR DESKTOP-->
+              <button class="navbar-toggler navbar_toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon navbar_toggler_icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="navbar_item">
+                    <a class="navbar_item_links" aria-current="page" href="Nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="navbar_item">
+                    <a class="navbar_item_links" href="Contactanos.html">Contactános</a>
+                  </li>
+                  <li class="navbar_item dropdown">
+                    <a class="navbar_item_links dropdown-toggle" href="Proyectos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Proyectos
+                    </a>
+                    <ul class="dropdown-menu navbar_item_dropdown" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item navbar_item_links_dropdown" href="AgrupacionMVC.html">Agrupación MVC</a></li>
+                      <li><a class="dropdown-item navbar_item_links_dropdown" href="MisionMVC.html">Misión MVC</a></li>
+                      <li><a class="dropdown-item navbar_item_links_dropdown" href="NocheDeCaridad.html">Noche de caridad</a></li>
+                    </ul>
+                  </li>
+                  <li class="navbar_item">
+                    <a class="navbar_item_links" href="NoticiasMVC.html">Noticias MVC</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <main>
+         <section>
+            <form action="" style="padding-top:25px">
+                <fieldset class="forms">
+                    <legend class="forms_legends">Contanos sobre vos</legend>
+                    <div class="forms_name">
+                        <label for="nombre">Completá tu nombre</label>
+                        <input class="forms_name_1" type="text" name="nombre" placeholder="xxxxx">
+                        <label for="apellido">¿Cuál es tu apellido?</label>
+                        <input class="forms_name_1" type="text" name="apellido" placeholder="xxxxx">
+                    </div>
+                    <div class="forms_email">
+                        <label for="email">Completá con tu mail</label>
+                        <input class="forms_email_1" type="email" required placeholder="@xxxxx">
+                        <label for="password">Crea una contraseña</label>
+                        <input class="forms_email_1" type="password" required placeholder="...">                                
+                    </div>
+                    <div class="form-group row forms_name">
+                        <div class="col-sm-2 forms_legends">¿Qué actividades te gustaría participar?</div>
+                        <div class="col-sm-10">
+                          <div class="form-check">
+                            <input class="form-check-input forms_name_input" type="checkbox" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                              Noche de caridad 
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                              <input class="form-check-input forms_name_input" type="checkbox" id="gridCheck1">
+                              <label class="form-check-label" for="gridCheck1">
+                                Misión MVC
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-sm-10">
+                            <div class="form-check">
+                              <input class="form-check-input forms_name_input" type="checkbox" id="gridCheck1">
+                              <label class="form-check-label" for="gridCheck1">
+                                Agrupación MVC
+                              </label>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="forms_email">
+                        <legend class="col-sm-2 forms_legends_alternative">¿Cuál es tu sexo?</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                            Hombre
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                            Mujer
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                            Prefiero no aclarar
+                            </label>
+                        </div>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Borrar datos</button>
+                    </div>
+                </fieldset>                
+            </form>
+         </section>
+        </main>
+        <footer class="footer"> <!--FOOTER-->
+          <div class="footer_logo">
+            <a href="Index.html"> <img src="footer-logo.png"></a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="Contactanos.html">Contacto</a>
+          </div>
+          <div class="footer_logo_abajo">
+            <a href="Proyectos.html">Proyectos</a>
+            <a href="NoticiasMVC.html">Noticias</a>
+          </div>
+          <div class="footer_redes">
+            <img class="footer_redes_svc"src="footer-facebook.svg">
+            <img class="footer_redes_svc" src="footer-twitter.svg">
+            <img class="footer_redes_svc" src="footer-instagram.svg">
+          </div>
+          <div class="footer_info">
+            <h2>Copyright © 2021. <span>MVC.</span><br>Todos los derechos reservados.</h2>
+          </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>    
+    </body>
+</html>
